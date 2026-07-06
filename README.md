@@ -1,3 +1,9 @@
+<img width="1024" height="559" alt="TrustGate" src="https://github.com/user-attachments/assets/d9c59630-e81c-462b-8f7e-db3983a67d98" />
+
+One ager: https://docs.google.com/document/d/1U6uNdAg_0GzYawfi_wGE9XYX7k-FCioxcBeM3ghMiQk/edit?usp=sharing
+PPT Deck: https://docs.google.com/presentation/d/1m8jxReehcJyfQTBeWy_lNR-djp0xBWFjDZfH7w2og28/edit?usp=sharing
+Demo Video: https://youtu.be/_HME8PgDo04
+
 # TrustGate
 TrustGate: The programmable compliance firewall for the Agent Economy. Automate ZK-verified risk assessment and secure on-chain settlement for high-value A2A commerce via the CROO Coordination Protocol.
 
