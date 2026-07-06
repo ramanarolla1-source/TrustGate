@@ -9,6 +9,30 @@ TrustGate is an API-callable compliance firewall that enables agents to "hire" a
 
 ## Architecture
 ![TrustGate Architecture](assets/diagram.png)
+__________________________________________________________________________
+| LAYER 1: APPLICATION (CROO Agent Store / CAP)                            |
+| [ External Agent A ] ----> ( Discovery & Hire ) ----> [ TrustGate Agent ]  |
+|__________________________________________________________________________|
+                                     |
+                                     v
+ __________________________________________________________________________
+| LAYER 2: TRUSTGATE FIREWALL (The Core Enclave)                            |
+|  ________________          ________________          _________________   |
+| | Risk-Classifier | ----> | BN254 / ElGamal | ----> | ZK-Attestation |  |
+| |__(Evaluation)___|       |____(Forge)______|       |______(Key)______|  |
+|__________________________________________________________________________|
+                                     |
+                                     v
+ __________________________________________________________________________
+| LAYER 3: EXECUTION (CROO Coordination Protocol - CCP)                    |
+| [ CCP Escrow Contract ] <---- ( Verifies Key ) ---- [ USDC Settlement ]    |
+|__________________________________________________________________________|
+                                     |
+                                     v
+ __________________________________________________________________________
+| LAYER 4: SETTLEMENT (Base Mainnet)                                       |
+| [ Account Abstraction ] ----> [ Immutable Ledger Audit Trail ]           |
+|__________________________________________________________________________|
 
 ## Core Workflow
 1. **Discovery:** The agent initiates a service request to TrustGate via the CROO Agent Store.
